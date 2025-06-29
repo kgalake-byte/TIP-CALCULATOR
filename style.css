@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-group {
+    margin: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4c4f50;
+}
+
+.tip-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tip-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tip-btn:hover {
+    background: #e0e0e0;
+}
+
+.tip-btn.active {
+    background: #4c4f50;
+    color: white;
+}
+
+#custom-tip {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.results {
+    background: #2d3436;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.result-row:last-child {
+    margin: 0;
+}
+
+.result-row h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.result-row p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+#tip-amount, #total-amount {
+    font-size: 1.5rem;
+    color: #4c4f50;
+    font-weight: bold;
+}
+
+#reset-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #4c4f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#reset-btn:hover {
+    background: #45a049;
+}
